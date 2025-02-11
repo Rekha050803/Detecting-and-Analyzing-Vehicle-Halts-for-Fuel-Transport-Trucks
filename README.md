@@ -45,8 +45,7 @@ The **Halt Detection System** is designed to monitor and analyze vehicle stops d
 ---
 
 ## 🧮 Algorithm Used
-- **Geodesic Distance Calculation**: Uses the Haversine formula to measure distances between two gps points.
-- **Threshold-Based Detection**: Identifies stops based on time (>5 mins) and distance (<10m).
-- **Proximity Filtering**: Excludes stops near authorized locations (within 500m).
+Geofencing was applied around authorized halt zones, such as refueling stations (ROs) and terminals, using predefined GPS coordinates and circular geofences (e.g., 1 km radius). Stops within these areas were marked as **✅ Authorized Halts**, while those outside were flagged as **❌ Unauthorized Halts**, indicating potential fuel theft or route deviations. Additionally, the **Google Places API** helps analyze nearby areas by creating a geofence around halt locations (e.g., 500m radius). The system fetches nearby points of interest such as 🍽️ restaurants (meal breaks), ☕ tea shops (short refreshments), and 🛑 rest stops (designated truck halts), allowing it to classify stops as legitimate or suspicious, improving decision-making and route compliance. The system uses **📏 Geodesic Distance Calculation** with the Haversine formula to measure distances between points, **⏳ Threshold-Based Detection** to identify stops based on time (>5 mins) and distance (<10m), and **📍 Proximity Filtering** to exclude stops near authorized locations (within 500m).
+
 
 

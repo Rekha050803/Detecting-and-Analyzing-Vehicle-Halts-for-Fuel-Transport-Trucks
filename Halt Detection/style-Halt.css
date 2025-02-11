@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+
+/* Style for the map container */
+#map {
+    height: 80vh; /* Full viewport height */
+    width: 100%; /* Full width */
+}
+
+.custom-info-window {
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 250px; /* Adjusted width */
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    position: relative; /* For the close button */
+}
+
+/* Close button style */
+.custom-info-window .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Title style */
+.custom-info-title {
+    font-weight: bold;
+    font-size: 16px; /* Slightly larger font size */
+    color: #444; /* Darker color for better readability */
+    margin-bottom: 10px;
+}
+
+/* Duration style */
+.custom-info-duration {
+    color: #888; /* Grey color for less emphasis */
+    font-style: italic; /* Italicize duration */
+}
+
+/* Hover effect for InfoWindow */
+.custom-info-window:hover {
+    background-color: #e3f2fd; /* Light blue on hover */
+    transition: background-color 0.3s ease;
+}
